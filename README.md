@@ -1,6 +1,3 @@
-Certainly! Here's an updated README.md for your Palooza02 engine:
-
-```markdown
 # Palooza02
 
 Palooza02 is a Rails engine that allows users to create and manage "paloozas," which are similar to blog posts. It provides a simple and flexible way to add a blogging-like functionality to your Rails application.
@@ -15,9 +12,8 @@ Palooza02 is a Rails engine that allows users to create and manage "paloozas," w
 
 Add this line to your application's Gemfile:
 
-```ruby
 gem "palooza02"
-```
+
 
 And then execute:
 
@@ -92,4 +88,3 @@ Please make sure to update tests as appropriate.
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-```
