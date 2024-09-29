@@ -19,19 +19,19 @@ gem "palooza02"
 And then execute:
 
 ```bash
-$ bundle install
+bundle install
 ```
 
 Or install it yourself as:
 
 ```bash
-$ gem install palooza02
+gem install palooza02
 ```
 
 After installing the gem, run the installation generator:
 
 ```bash
-$ rails generate palooza02:install
+rails generate palooza02:install
 ```
 
 This will:
@@ -41,8 +41,8 @@ This will:
 Finally, run the migrations:
 
 ```bash
-$ rails palooza02:install:migrations
-$ rails db:migrate
+rails palooza02:install:migrations
+rails db:migrate
 ```
 
 ## Usage
@@ -71,7 +71,7 @@ end
 To customize the views, you can copy them to your main app:
 
 ```bash
-$ rails generate palooza02:views
+rails generate palooza02:views
 ```
 
 This will copy all views into `app/views/palooza02/` in your main app, where you can modify them.
