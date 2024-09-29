@@ -1,0 +1,31 @@
+<!-- app/views/static_pages/index.html.erb -->
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-6">Static Pages</h1>
+
+  <%= link_to 'Create New Static Page', new_static_page_path, class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 inline-block' %>
+
+  <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <table class="min-w-full">
+      <thead>
+        <tr>
+          <th class="text-left py-2">Title</th>
+          <th class="text-left py-2">Slug</th>
+          <th class="text-left py-2">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @static_pages.each do |static_page| %>
+          <tr>
+            <td class="py-2"><%= static_page.title %></td>
+            <td class="py-2"><%= static_page.slug %></td>
+            <td class="py-2">
+              <%= link_to 'View', static_page_path(static_page), class: 'text-blue-500 hover:text-blue-700 mr-2' %>
+              <%= link_to 'Edit', edit_static_page_path(static_page), class: 'text-green-500 hover:text-green-700 mr-2' %>
+              <%= link_to 'Delete', static_page_path(static_page), method: :delete, data: { confirm: 'Are you sure?' }, class: 'text-red-500 hover:text-red-700' %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
