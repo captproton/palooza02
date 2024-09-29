@@ -12,8 +12,9 @@ Palooza02 is a Rails engine that allows users to create and manage "paloozas," w
 
 Add this line to your application's Gemfile:
 
+```ruby
 gem "palooza02"
-
+```
 
 And then execute:
 
