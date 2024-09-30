@@ -1,5 +1,9 @@
+# app/models/palooza02/palooza.rb
 module Palooza02
   class Palooza < ApplicationRecord
+    acts_as_tenant(:account)
+    belongs_to :account
+
     validates :title, presence: true
     validates :content, presence: true
 
