@@ -1,14 +1,14 @@
 require_relative "lib/palooza02/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "palooza02"
-  spec.version     = Palooza02::VERSION
-  spec.authors     = ["captproton"]
-  spec.email       = ["carl@wdwhub.net"]
-  spec.homepage    = "https://github.com/captproton/palooza02"
-  spec.summary     = "A Rails engine to create and manage paloozas, similar to blog posts."
+  spec.name = "palooza02"
+  spec.version = Palooza02::VERSION
+  spec.authors = [ "captproton" ]
+  spec.email = [ "carl@wdwhub.net" ]
+  spec.homepage = "https://github.com/captproton/palooza02"
+  spec.summary = "A Rails engine to create and manage paloozas, similar to blog posts."
   spec.description = "Palooza02 is a Rails engine that allows users to create, read, update, and delete paloozas, which are similar to blog posts. It provides a simple interface to manage paloozas within a Rails application."
-  spec.license     = "MIT"
+  spec.license = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
   # to allow pushing to a single host or delete this section to allow pushing to any host.

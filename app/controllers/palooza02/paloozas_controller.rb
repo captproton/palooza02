@@ -3,7 +3,7 @@ require_dependency "palooza02/application_controller"
 
 module Palooza02
   class PaloozasController < ApplicationController
-    before_action :set_palooza, only: [:show, :edit, :update, :destroy]
+    before_action :set_palooza, only: [ :show, :edit, :update, :destroy ]
 
     def index
       @paloozas = Palooza.all
@@ -20,7 +20,7 @@ module Palooza02
       @palooza = Palooza.new(palooza_params)
       @palooza.author = current_user
       if @palooza.save
-        redirect_to @palooza, notice: 'Palooza was successfully created.'
+        redirect_to @palooza, notice: "Palooza was successfully created."
       else
         render :new
       end
@@ -31,7 +31,7 @@ module Palooza02
 
     def update
       if @palooza.update(palooza_params)
-        redirect_to @palooza, notice: 'Palooza was successfully updated.'
+        redirect_to @palooza, notice: "Palooza was successfully updated."
       else
         render :edit
       end
@@ -39,7 +39,7 @@ module Palooza02
 
     def destroy
       @palooza.destroy
-      redirect_to paloozas_url, notice: 'Palooza was successfully destroyed.'
+      redirect_to paloozas_url, notice: "Palooza was successfully destroyed."
     end
 
     private
