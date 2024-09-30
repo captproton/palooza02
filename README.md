@@ -7,6 +7,7 @@ Palooza02 is a Rails engine that allows users to create and manage "paloozas," w
 - Create, read, update, and delete paloozas
 - Customizable views and styling
 - Easy integration with existing Rails applications
+- Use the green [template] button on GitHub to start an engine that works with Jumpstart Rails
 
 ## Installation
 

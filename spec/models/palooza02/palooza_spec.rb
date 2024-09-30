@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 module Palooza02
   RSpec.describe Palooza, type: :model do
