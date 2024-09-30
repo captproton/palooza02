@@ -1,3 +1,4 @@
+# app/controllers/palooza02/palooza02/paloozas_controller.rb
 require_dependency "palooza02/application_controller"
 
 module Palooza02
