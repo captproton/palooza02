@@ -1,4 +1,6 @@
 # app/models/palooza02/palooza.rb
+require 'acts_as_tenant'
+
 module Palooza02
   class Palooza < ApplicationRecord
     acts_as_tenant(:account)
