@@ -18,6 +18,7 @@ module Palooza02
 
     def create
       @palooza = Palooza.new(palooza_params)
+      @palooza.author = current_user
       if @palooza.save
         redirect_to @palooza, notice: 'Palooza was successfully created.'
       else

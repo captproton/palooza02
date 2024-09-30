@@ -20,16 +20,3 @@ module Palooza02
     end
   end
 end
-# app/models/palooza02/palooza.rb
-module Palooza02
-  class Palooza < ApplicationRecord
-    acts_as_tenant(:account)
-    belongs_to :author, class_name: 'User'
-
-    validates :title, presence: true
-    validates :content, presence: true
-    validates :author, presence: true
-
-    # ... rest of your model code
-  end
-end
