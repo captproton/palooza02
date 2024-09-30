@@ -1,5 +1,4 @@
 <%# app/views/palooza02/paloozas/index.html.erb %>
-<%# app/views/palooza02/paloozas/index.html.erb %>
 <div class="container mx-auto px-4 py-8">
   <h1 class="text-3xl font-bold mb-6">Paloozas</h1>
   <%= link_to 'Create New Palooza', new_palooza_path, class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4 inline-block' %>
@@ -8,6 +7,7 @@
       <thead>
         <tr>
           <th class="text-left py-2">Title</th>
+          <th class="text-left py-2">Author</th>
           <th class="text-left py-2">Published At</th>
           <th class="text-left py-2">Actions</th>
         </tr>
@@ -16,7 +16,8 @@
         <% @paloozas.each do |palooza| %>
           <tr>
             <td class="py-2"><%= palooza.title %></td>
-            <td class="py-2"><%= palooza.published_at %></td>
+            <td class="py-2"><%= palooza.author.name %></td>
+            <td class="py-2"><%= palooza.published_at.strftime("%B %d, %Y %I:%M %p") %></td>
             <td class="py-2">
               <%= link_to 'View', palooza_path(palooza), class: 'text-blue-500 hover:text-blue-700 mr-2' %>
               <%= link_to 'Edit', edit_palooza_path(palooza), class: 'text-green-500 hover:text-green-700 mr-2' %>
