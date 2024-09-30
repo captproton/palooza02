@@ -16,6 +16,7 @@
         <% @paloozas.each do |palooza| %>
           <tr>
             <td class="py-2"><%= palooza.title %></td>
+            <td class="py-2"><%= palooza.author.name.full %></td>
             <td class="py-2"><%= palooza.published_at %></td>
             <td class="py-2">
               <%= link_to 'View', palooza_path(palooza), class: 'text-blue-500 hover:text-blue-700 mr-2' %>
